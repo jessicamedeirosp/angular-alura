@@ -1,0 +1,19 @@
+<div class="text-center mt-3 mb-3">
+  <form>
+    <div class="row no-gutters">
+      <div class="col text-right">
+        <i aria-hidden="true" class="fa fa-search mt-2 mr-2"></i>
+      </div>
+      <div class="col-8">
+        <input
+        class="rounded form-control"
+        type="search"
+        placeholder="search..."
+        autofocus
+        (keyup)="debounce.next($event.target.value)"
+        [value]="value">
+      </div>
+      <div class="col"></div>
+    </div>
+  </form>
+</div>
